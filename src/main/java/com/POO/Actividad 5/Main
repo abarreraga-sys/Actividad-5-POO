@@ -1,0 +1,16 @@
+package com.poo.actividad5;
+
+import com.poo.actividad5.interfaz.ContactFrame;
+import com.poo.actividad5.repository.TxtContactRepository;
+import com.poo.actividad5.service.ContactService;
+
+import javax.swing.SwingUtilities;
+
+public class Main {
+
+    public static void main(String[] args) {
+        TxtContactRepository repository = new TxtContactRepository("data/contactos.txt");
+        ContactService service = new ContactService(repository);
+        SwingUtilities.invokeLater(() -> new ContactFrame(service).setVisible(true));
+    }
+}
