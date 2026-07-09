@@ -1,7 +1,7 @@
-package com.poo.actividadgrupal5.interfaz;
+package com.poo.actividad5.interfaz;
 
-import com.poo.actividadgrupal5.model.Contact;
-import com.poo.actividadgrupal5.service.ContactService;
+import com.poo.actividad5.model.Contact;
+import com.poo.actividad5.service.ContactService;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
